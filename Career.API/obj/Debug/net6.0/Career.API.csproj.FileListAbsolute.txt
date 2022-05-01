@@ -6,6 +6,9 @@
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Career.API.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Career.API.pdb
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/AutoMapper.dll
+/Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Elasticsearch.Net.dll
+/Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Humanizer.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/MassTransit.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/MassTransit.Abstractions.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/MassTransit.ExtensionsDependencyInjectionIntegration.dll
@@ -14,10 +17,13 @@
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.Design.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll
+/Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Microsoft.Extensions.Configuration.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Microsoft.Identity.Client.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
@@ -26,9 +32,12 @@
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Microsoft.OpenApi.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+/Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Nest.dll
+/Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Nest.JsonNetSerializer.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Newtonsoft.Json.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Npgsql.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Pipelines.Sockets.Unofficial.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/RabbitMQ.Client.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/StackExchange.Redis.dll

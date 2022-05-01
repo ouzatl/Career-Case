@@ -38,10 +38,21 @@ public class JobController : ControllerBase
         return Ok();
     }
 
-    [HttpGet(Name = "Search")]
+    [HttpGet("Search")]
     public async Task<IActionResult> Search(string key)
     {
         //await _jobService.Search(key);
+        return Ok();
+    }
+
+    [HttpPost("AddBannedWord")]
+    public async Task<IActionResult> AddBannedWord(string word)
+    {
+        if (string.IsNullOrEmpty(word))
+            return BadRequest();
+
+        await _jobService.AddBannedWords(word);
+
         return Ok();
     }
 }

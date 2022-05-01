@@ -18,7 +18,7 @@ namespace Career.Data.Repositories
         public async Task<T> Add(T entity)
         {
             _dbSet.Add(entity);
-            await _dbContext.SaveChangesAsync();
+            var result = await _dbContext.SaveChangesAsync();
 
             return entity;
         }
@@ -46,7 +46,7 @@ namespace Career.Data.Repositories
         public async Task<T> Update(T entity)
         {
             _dbContext.Entry(entity).State = EntityState.Modified;
-            await _dbContext.SaveChangesAsync();
+            var result = await _dbContext.SaveChangesAsync();
 
             return entity;
         }

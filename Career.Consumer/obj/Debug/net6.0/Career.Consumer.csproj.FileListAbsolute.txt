@@ -1,9 +1,12 @@
 /Users/oguzatli/workspace/Career-Case/Career.Consumer/bin/Debug/net6.0/Career.Consumer
+/Users/oguzatli/workspace/Career-Case/Career.Consumer/bin/Debug/net6.0/appsettings.json
 /Users/oguzatli/workspace/Career-Case/Career.Consumer/bin/Debug/net6.0/Career.Consumer.deps.json
 /Users/oguzatli/workspace/Career-Case/Career.Consumer/bin/Debug/net6.0/Career.Consumer.runtimeconfig.json
 /Users/oguzatli/workspace/Career-Case/Career.Consumer/bin/Debug/net6.0/Career.Consumer.dll
 /Users/oguzatli/workspace/Career-Case/Career.Consumer/bin/Debug/net6.0/Career.Consumer.pdb
 /Users/oguzatli/workspace/Career-Case/Career.Consumer/bin/Debug/net6.0/AutoMapper.dll
+/Users/oguzatli/workspace/Career-Case/Career.Consumer/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/oguzatli/workspace/Career-Case/Career.Consumer/bin/Debug/net6.0/Elasticsearch.Net.dll
 /Users/oguzatli/workspace/Career-Case/Career.Consumer/bin/Debug/net6.0/MassTransit.dll
 /Users/oguzatli/workspace/Career-Case/Career.Consumer/bin/Debug/net6.0/MassTransit.Abstractions.dll
 /Users/oguzatli/workspace/Career-Case/Career.Consumer/bin/Debug/net6.0/MassTransit.ExtensionsDependencyInjectionIntegration.dll
@@ -41,6 +44,8 @@
 /Users/oguzatli/workspace/Career-Case/Career.Consumer/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/oguzatli/workspace/Career-Case/Career.Consumer/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
 /Users/oguzatli/workspace/Career-Case/Career.Consumer/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+/Users/oguzatli/workspace/Career-Case/Career.Consumer/bin/Debug/net6.0/Nest.dll
+/Users/oguzatli/workspace/Career-Case/Career.Consumer/bin/Debug/net6.0/Nest.JsonNetSerializer.dll
 /Users/oguzatli/workspace/Career-Case/Career.Consumer/bin/Debug/net6.0/Newtonsoft.Json.dll
 /Users/oguzatli/workspace/Career-Case/Career.Consumer/bin/Debug/net6.0/Npgsql.dll
 /Users/oguzatli/workspace/Career-Case/Career.Consumer/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
@@ -85,4 +90,3 @@
 /Users/oguzatli/workspace/Career-Case/Career.Consumer/obj/Debug/net6.0/Career.Consumer.pdb
 /Users/oguzatli/workspace/Career-Case/Career.Consumer/obj/Debug/net6.0/Career.Consumer.genruntimeconfig.cache
 /Users/oguzatli/workspace/Career-Case/Career.Consumer/obj/Debug/net6.0/ref/Career.Consumer.dll
-/Users/oguzatli/workspace/Career-Case/Career.Consumer/bin/Debug/net6.0/appsettings.json

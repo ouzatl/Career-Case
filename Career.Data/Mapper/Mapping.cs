@@ -9,7 +9,9 @@ namespace Career.Data.Mapper
     {
         public Mapping()
         {
-            CreateMap<Company, CompanyContract>().ReverseMap();
+            CreateMap<Company, CompanyContract>().ReverseMap()
+            .ForMember(a => a.IsActive, opt => opt.Ignore());
+
             CreateMap<Job, JobContract>().ReverseMap();
         }
     }

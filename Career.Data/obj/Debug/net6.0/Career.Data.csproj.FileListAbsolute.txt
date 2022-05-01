@@ -1,4 +1,5 @@
 /Users/oguzatli/workspace/Career-Case/Career.Data/bin/Debug/net6.0/Career.Data.deps.json
+/Users/oguzatli/workspace/Career-Case/Career.Data/bin/Debug/net6.0/Career.Data.runtimeconfig.json
 /Users/oguzatli/workspace/Career-Case/Career.Data/bin/Debug/net6.0/Career.Data.dll
 /Users/oguzatli/workspace/Career-Case/Career.Data/bin/Debug/net6.0/Career.Data.pdb
 /Users/oguzatli/workspace/Career-Case/Career.Data/bin/Debug/net6.0/Career.Common.dll
@@ -14,4 +15,5 @@
 /Users/oguzatli/workspace/Career-Case/Career.Data/obj/Debug/net6.0/Career.Data.dll
 /Users/oguzatli/workspace/Career-Case/Career.Data/obj/Debug/net6.0/refint/Career.Data.dll
 /Users/oguzatli/workspace/Career-Case/Career.Data/obj/Debug/net6.0/Career.Data.pdb
+/Users/oguzatli/workspace/Career-Case/Career.Data/obj/Debug/net6.0/Career.Data.genruntimeconfig.cache
 /Users/oguzatli/workspace/Career-Case/Career.Data/obj/Debug/net6.0/ref/Career.Data.dll

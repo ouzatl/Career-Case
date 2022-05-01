@@ -1,6 +1,9 @@
 using Career.API;
 using Career.Common.Configuration;
+using Career.Data;
+using Career.Data.Mapper;
 using MassTransit;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using RabbitMQ.Client;
 
@@ -23,21 +26,24 @@ RedisConnection(services);
 QueueConnection(services);
 //Dependency Injection
 DependencyInjection(services);
+//AutoMapper
+services.AddAutoMapper(typeof(Mapping));
+
 
 #region Methods
 
 void QueueConnection(IServiceCollection services)
 {
-    var appSettingsSection = builder.Configuration.GetSection("appsettings");
-    var appSettings = appSettingsSection.Get<Appsettings>();
+    var appSettingsSection = builder.Configuration.GetSection("QueueSettings");
+    var appSettings = appSettingsSection.Get<QueueSettings>();
 
     services.AddSingleton(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
     {
-        cfg.Host(appSettings.QueueSettings.HostName, appSettings.QueueSettings.VirtualHost,
+        cfg.Host(appSettings.HostName, appSettings.VirtualHost,
         h =>
         {
-            h.Username(appSettings.QueueSettings.UserName);
-            h.Password(appSettings.QueueSettings.Password);
+            h.Username(appSettings.UserName);
+            h.Password(appSettings.Password);
         });
 
         cfg.ExchangeType = ExchangeType.Direct;
@@ -46,8 +52,8 @@ void QueueConnection(IServiceCollection services)
 
 void PostgresSqlConnection(IServiceCollection services)
 {
-    // services.AddEntityFrameworkNpgsql().AddDbContext<CareerPostgreSqlContext>(opt =>
-    // opt.UseNpgsql(Configuration.GetConnectionString("PostgresSQLConnectionString")));
+    services.AddEntityFrameworkNpgsql().AddDbContext<CareerContext>(opt =>
+    opt.UseNpgsql(builder.Configuration.GetConnectionString("PostgresSQLConnectionString")));
 }
 
 void RedisConnection(IServiceCollection services)

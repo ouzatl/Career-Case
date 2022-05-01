@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "9vwpYfOA/dWNOCcMAisB65mFPb7wAA9I73h2Gh5nT2AGa7GPCLPxGJbvo16vo2TZVtvcoheYJnbYcLyfouYXig==",
+  "dgSpecHash": "1pNe8yYHKwyk7cWLP/PCydgnqO/w9Y3euOggEeSHkI01AsM/OAbg8EBsBKvPSZ7Slee5MbKeZq3iUhPPl0j5Tg==",
   "success": true,
   "projectFilePath": "/Users/oguzatli/workspace/Career-Case/Career.Common/Career.Common.csproj",
   "expectedPackageFiles": [
     "/Users/oguzatli/.nuget/packages/automapper/11.0.1/automapper.11.0.1.nupkg.sha512",
+    "/Users/oguzatli/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/11.0.0/automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/elasticsearch.net/7.17.1/elasticsearch.net.7.17.1.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/masstransit/8.0.2/masstransit.8.0.2.nupkg.sha512",
@@ -25,6 +26,7 @@
     "/Users/oguzatli/.nuget/packages/microsoft.extensions.caching.abstractions/6.0.0/microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/microsoft.extensions.caching.memory/6.0.1/microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/microsoft.extensions.caching.stackexchangeredis/6.0.4/microsoft.extensions.caching.stackexchangeredis.6.0.4.nupkg.sha512",
+    "/Users/oguzatli/.nuget/packages/microsoft.extensions.configuration/6.0.1/microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/microsoft.extensions.configuration.abstractions/6.0.0/microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/microsoft.extensions.dependencyinjection/6.0.0/microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",

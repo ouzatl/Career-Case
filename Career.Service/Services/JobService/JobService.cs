@@ -59,7 +59,7 @@ namespace Career.Service.Services.JobService
                     job.Quailty = await CalculateQuality(job);
                     job.IsActive = true;
 
-                    var result = _jobRepository.Add(job);
+                    var result = await _jobRepository.Add(job);
 
                     if (result != null)
                     {
@@ -73,7 +73,7 @@ namespace Career.Service.Services.JobService
                         });
 
                         //düzgün bir response dönce controller seviyesinde sarmala.
-                        
+
                     }
                 }
             }
@@ -93,13 +93,13 @@ namespace Career.Service.Services.JobService
         {
             var result = default(int);
 
-            if (string.IsNullOrEmpty(job.TypeOfWork))
+            if (!string.IsNullOrEmpty(job.TypeOfWork))
                 result = result + 1;
 
             if (job.Salary > default(double))
                 result = result + 1;
 
-            if (string.IsNullOrEmpty(job.Benefits))
+            if (!string.IsNullOrEmpty(job.Benefits))
                 result = result + 1;
 
             var hasBannedWords = await HasBannedWords(job.Description);
@@ -112,7 +112,7 @@ namespace Career.Service.Services.JobService
         private async Task<bool> HasBannedWords(string description)
         {
             var bannedWordsList = await GetBannedWords();
-            if (bannedWordsList.Count > 0)
+            if (bannedWordsList != null && bannedWordsList.Count > 0)
                 return bannedWordsList.Any(x => description.Contains(x.Name));
 
             return false;
@@ -142,6 +142,18 @@ namespace Career.Service.Services.JobService
             }
 
             return bannedWordsList;
+        }
+
+        public async Task AddBannedWords(string words)
+        {
+            try
+            {
+                await _bannedWordsRepository.Add(new BannedWords { Name = words, IsActive = true });
+            }
+            catch (System.Exception ex)
+            {
+                _logger.Error("JobService AddBannedWords Method: ", ex);
+            }
         }
     }
 }

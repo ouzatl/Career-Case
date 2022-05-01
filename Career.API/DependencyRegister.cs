@@ -1,4 +1,5 @@
 using Career.Common.Logging;
+using Career.Data.Repositories.BannedWordsRepository;
 using Career.Data.Repositories.CompanyRepository;
 using Career.Data.Repositories.JobRepository;
 using Career.Service.Services.CompanyService;
@@ -24,11 +25,11 @@ namespace Career.API
             //Repositories
             _services.AddScoped<ICompanyRepository, CompanyRepository>();
             _services.AddScoped<IJobRepository, JobRepository>();
+            _services.AddScoped<IBannedWordsRepository, BannedWordsRepository>();
 
             //Others
             // _services.AddScoped<AnyHelper>();
             _services.AddScoped<ICompositeLogger, CompositeLogger>();
-
             _services.AddSingleton<IPublishEndpoint>(provider => provider.GetRequiredService<IBusControl>());
             _services.AddSingleton<ISendEndpointProvider>(provider => provider.GetRequiredService<IBusControl>());
             _services.AddSingleton<IBus>(provider => provider.GetRequiredService<IBusControl>());

@@ -35,12 +35,4 @@ public class CompanyController : ControllerBase
 
         return Ok();
     }
-
-    [HttpGet(Name = "Search")]
-    public async Task<IActionResult> Search(string key)
-    {
-        // await _companyService.Search(key);
-
-        return Ok();
-    }
 }
