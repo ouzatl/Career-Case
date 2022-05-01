@@ -1,0 +1,17 @@
+/Users/oguzatli/workspace/Career-Case/Career.Data/bin/Debug/net6.0/Career.Data.deps.json
+/Users/oguzatli/workspace/Career-Case/Career.Data/bin/Debug/net6.0/Career.Data.dll
+/Users/oguzatli/workspace/Career-Case/Career.Data/bin/Debug/net6.0/Career.Data.pdb
+/Users/oguzatli/workspace/Career-Case/Career.Data/bin/Debug/net6.0/Career.Common.dll
+/Users/oguzatli/workspace/Career-Case/Career.Data/bin/Debug/net6.0/Career.Contract.dll
+/Users/oguzatli/workspace/Career-Case/Career.Data/bin/Debug/net6.0/Career.Common.pdb
+/Users/oguzatli/workspace/Career-Case/Career.Data/bin/Debug/net6.0/Career.Contract.pdb
+/Users/oguzatli/workspace/Career-Case/Career.Data/obj/Debug/net6.0/Career.Data.csproj.AssemblyReference.cache
+/Users/oguzatli/workspace/Career-Case/Career.Data/obj/Debug/net6.0/Career.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/oguzatli/workspace/Career-Case/Career.Data/obj/Debug/net6.0/Career.Data.AssemblyInfoInputs.cache
+/Users/oguzatli/workspace/Career-Case/Career.Data/obj/Debug/net6.0/Career.Data.AssemblyInfo.cs
+/Users/oguzatli/workspace/Career-Case/Career.Data/obj/Debug/net6.0/Career.Data.csproj.CoreCompileInputs.cache
+/Users/oguzatli/workspace/Career-Case/Career.Data/obj/Debug/net6.0/Career.Data.csproj.CopyComplete
+/Users/oguzatli/workspace/Career-Case/Career.Data/obj/Debug/net6.0/Career.Data.dll
+/Users/oguzatli/workspace/Career-Case/Career.Data/obj/Debug/net6.0/refint/Career.Data.dll
+/Users/oguzatli/workspace/Career-Case/Career.Data/obj/Debug/net6.0/Career.Data.pdb
+/Users/oguzatli/workspace/Career-Case/Career.Data/obj/Debug/net6.0/ref/Career.Data.dll
