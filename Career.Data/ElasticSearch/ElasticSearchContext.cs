@@ -3,15 +3,15 @@ using Career.Common.Logging;
 using Career.Contract.ElasticSearchModel;
 using Nest;
 
-namespace Career.Service.ElasticSearch
+namespace Career.Data.ElasticSearch
 {
-    public class ElasticSearchService : IElasticSearchService
+    public class ElasticSearchContext : IElasticSearchContext
     {
         public IElasticClient Client { get; set; }
         private readonly IElasticSearchConfiguration _elasticSearchConfiguration;
         private readonly ICompositeLogger _logger;
 
-        public ElasticSearchService(
+        public ElasticSearchContext(
             IElasticSearchConfiguration elasticSearchConfiguration,
             ICompositeLogger logger)
         {
@@ -75,12 +75,12 @@ namespace Career.Service.ElasticSearch
             return true;
         }
 
-        public ISearchResponse<T> SimpleSearch<T, TKey>(string indexName, SearchDescriptor<T> query) where T : ElasticEntity<TKey>
+        public async Task<ISearchResponse<T>> SimpleSearch<T, TKey>(string indexName, SearchDescriptor<T> query) where T : ElasticEntity<TKey>
         {
             try
             {
                 query.Index(indexName);
-                var response = Client.Search<T>(query);
+                var response = await Client.SearchAsync<T>(query);
 
                 return response;
             }

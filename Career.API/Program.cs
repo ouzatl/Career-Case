@@ -5,7 +5,6 @@ using Career.Data.Mapper;
 using MassTransit;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using RabbitMQ.Client;
 
 
 
@@ -45,8 +44,6 @@ void QueueConnection(IServiceCollection services)
             h.Username(appSettings.UserName);
             h.Password(appSettings.Password);
         });
-
-        cfg.ExchangeType = ExchangeType.Direct;
     }));
 }
 
@@ -69,6 +66,7 @@ void AddSwagger(IServiceCollection services)
     services.AddSwaggerGen(x =>
     {
         x.SwaggerDoc("v1", new OpenApiInfo { Title = "Core API", Description = "Career API" });
+        x.EnableAnnotations();
     });
 }
 

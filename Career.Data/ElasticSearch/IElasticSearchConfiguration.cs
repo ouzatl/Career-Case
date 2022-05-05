@@ -1,4 +1,4 @@
-namespace Career.Service.ElasticSearch
+namespace Career.Data.ElasticSearch
 {
     public interface IElasticSearchConfiguration
     {

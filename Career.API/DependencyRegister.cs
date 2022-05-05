@@ -1,4 +1,5 @@
 using Career.Common.Logging;
+using Career.Data.ElasticSearch;
 using Career.Data.Repositories.BannedWordsRepository;
 using Career.Data.Repositories.CompanyRepository;
 using Career.Data.Repositories.JobRepository;
@@ -33,6 +34,8 @@ namespace Career.API
             _services.AddSingleton<IPublishEndpoint>(provider => provider.GetRequiredService<IBusControl>());
             _services.AddSingleton<ISendEndpointProvider>(provider => provider.GetRequiredService<IBusControl>());
             _services.AddSingleton<IBus>(provider => provider.GetRequiredService<IBusControl>());
+            _services.AddSingleton<IElasticSearchConfiguration, ElasticSearchConfiguration>();
+            _services.AddScoped<IElasticSearchContext, ElasticSearchContext>();
         }
     }
 }

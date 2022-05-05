@@ -33,16 +33,20 @@ public class JobController : ControllerBase
         contract.CompanyId <= default(int))
             return BadRequest();
 
-        await _jobService.Add(contract);
+        var result = await _jobService.Add(contract);
 
         return Ok();
     }
 
     [HttpGet("Search")]
-    public async Task<IActionResult> Search(string key)
+    public async Task<IActionResult> Search(string text)
     {
-        //await _jobService.Search(key);
-        return Ok();
+        if (string.IsNullOrEmpty(text))
+            return BadRequest();
+
+        var result = await _jobService.Search(text);
+
+        return Ok(result);
     }
 
     [HttpPost("AddBannedWord")]
@@ -51,7 +55,7 @@ public class JobController : ControllerBase
         if (string.IsNullOrEmpty(word))
             return BadRequest();
 
-        await _jobService.AddBannedWords(word);
+        var result = await _jobService.AddBannedWords(word);
 
         return Ok();
     }

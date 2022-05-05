@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": ".NET Core Launch (console)",
+            "name": "Career Consumer",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
@@ -13,7 +13,7 @@
             "console": "internalConsole"
         },
         {
-            "name": ".NET Core Launch (web)",
+            "name": "Career API",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
@@ -45,6 +45,14 @@
             "netCore": {
                 "appProject": "${workspaceFolder}/Career.API/Career.API.csproj"
             }
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Career API - Consumer",
+            "configurations": [
+                "Career API","Career Consumer"
+            ]
         }
     ]
 }

@@ -12,5 +12,12 @@ namespace Career.Data.Repositories.CompanyRepository
             _dbContext = dbContext;
         }
 
+        public async Task<IList<Company>> Get(string phoneNumber)
+        {
+            var company = await _dbContext.Set<Company>().Where(x => x.PhoneNumber == phoneNumber).ToListAsync();
+
+            return company;
+        }
+
     }
 }

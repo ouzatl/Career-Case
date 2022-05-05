@@ -3,7 +3,9 @@ using AutoMapper;
 using Career.Common.Constants;
 using Career.Common.Logging;
 using Career.Contract.Contracts.Job;
+using Career.Contract.ElasticSearchModel.Job;
 using Career.Contract.Job;
+using Career.Data.ElasticSearch;
 using Career.Data.Models;
 using Career.Data.Repositories.BannedWordsRepository;
 using Career.Data.Repositories.CompanyRepository;
@@ -23,6 +25,7 @@ namespace Career.Service.Services.JobService
         private readonly ICompositeLogger _logger;
         private readonly IMapper _mapper;
         private readonly IPublishEndpoint _endpoint;
+        private readonly IElasticSearchContext _elasticSearchContext;
 
 
         public JobService(
@@ -32,7 +35,8 @@ namespace Career.Service.Services.JobService
             IDistributedCache distributedCache,
             ICompositeLogger logger,
             IMapper mapper,
-            IPublishEndpoint endpoint
+            IPublishEndpoint endpoint,
+            IElasticSearchContext elasticSearchContext
             )
         {
             _jobRepository = jobRepository;
@@ -42,45 +46,46 @@ namespace Career.Service.Services.JobService
             _logger = logger;
             _mapper = mapper;
             _endpoint = endpoint;
+            _elasticSearchContext = elasticSearchContext;
         }
 
-        public async Task Add(JobContract contract)
+        public async Task<bool> Add(JobContract contract)
         {
+            var result = true;
             try
             {
                 var company = await _companyRepository.Get(contract.CompanyId);
 
                 if (company != null && company.MaxPostCount > 0)
                 {
-
                     var job = _mapper.Map<Job>(contract);
 
                     job.AvailableUntil = contract.AvailableFrom.AddDays(15);
                     job.Quailty = await CalculateQuality(job);
                     job.IsActive = true;
 
-                    var result = await _jobRepository.Add(job);
+                    var data = await _jobRepository.Add(job);
 
-                    if (result != null)
+                    if (data != null)
                     {
                         await UpdateCompany(company);
-
+                        contract.Id = company.Id;
                         await _endpoint.Publish<IJobChangedMessage>(new JobChangedMessage()
                         {
-                            MessageId = new Guid(),
+                            MessageId = Guid.NewGuid(),
                             Job = contract,
                             CreatedDate = DateTime.Now
                         });
-
-                        //düzgün bir response dönce controller seviyesinde sarmala.
-
                     }
                 }
             }
             catch (System.Exception ex)
             {
+                result = false;
                 _logger.Error("JobService Add Method: ", ex);
             }
+
+            return result;
         }
 
         private async Task UpdateCompany(Company company)
@@ -144,16 +149,45 @@ namespace Career.Service.Services.JobService
             return bannedWordsList;
         }
 
-        public async Task AddBannedWords(string words)
+        public async Task<bool> AddBannedWords(string words)
         {
+            var result = true;
             try
             {
                 await _bannedWordsRepository.Add(new BannedWords { Name = words, IsActive = true });
             }
             catch (System.Exception ex)
             {
+                result = false;
                 _logger.Error("JobService AddBannedWords Method: ", ex);
             }
+
+            return result;
+        }
+
+        public async Task<List<JobElasticModel>> Search(string text)
+        {
+            var result = new List<JobElasticModel>();
+
+            try
+            {
+                var searchQuery = new Nest.SearchDescriptor<JobElasticModel>()
+                                          .Query(q =>
+                                            q.Match(m => m.Field(f => f.Position).Query(text))
+                                            || q.Match(m => m.Field(f => f.Description).Query(text))
+                                            || q.Match(m => m.Field(f => f.TypeOfWork).Query(text))
+                                          )
+                                          .Sort(a => a.Descending(s => s.Quailty));
+
+                var searchResult = await _elasticSearchContext.SimpleSearch<JobElasticModel, string>("JOB", searchQuery);
+                result = searchResult.Documents.ToList();
+            }
+            catch (Exception ex)
+            {
+                _logger.Error("JobService Search Method", ex);
+            }
+
+            return result;
         }
     }
 }

@@ -1,13 +1,13 @@
 using Career.Contract.ElasticSearchModel;
 using Nest;
 
-namespace Career.Service.ElasticSearch
+namespace Career.Data.ElasticSearch
 {
-    public interface IElasticSearchService
+    public interface IElasticSearchContext
     {
         bool CreateIndex<T, TKey>(string index) where T : ElasticEntity<TKey>;
         bool ExistIndex(string indexName);
         bool AddData<T, TKey>(string indexName, T data) where T : ElasticEntity<TKey>;
-        ISearchResponse<T> SimpleSearch<T, TKey>(string indexName, SearchDescriptor<T> query) where T : ElasticEntity<TKey>;
+        Task<ISearchResponse<T>> SimpleSearch<T, TKey>(string indexName, SearchDescriptor<T> query) where T : ElasticEntity<TKey>;
     }
 }

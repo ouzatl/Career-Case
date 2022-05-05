@@ -1,6 +1,6 @@
 namespace Career.Contract.ElasticSearchModel.Job
 {
-    public class JobElasticModel
+    public class JobElasticModel : ElasticEntity<string>
     {
         public int Id { get; set; }
         public int CompanyId { get; set; }
@@ -9,7 +9,7 @@ namespace Career.Contract.ElasticSearchModel.Job
         public DateTime AvailableFrom { get; set; }
         public double Quailty { get; set; }
         public string Benefits { get; set; }
-        public string Type { get; set; }
+        public string TypeOfWork { get; set; }
         public double Salary { get; set; }
     }
 }

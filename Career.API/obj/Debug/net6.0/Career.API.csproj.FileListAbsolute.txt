@@ -41,6 +41,7 @@
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Pipelines.Sockets.Unofficial.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/RabbitMQ.Client.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/StackExchange.Redis.dll
+/Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Swashbuckle.AspNetCore.Annotations.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/oguzatli/workspace/Career-Case/Career.API/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll

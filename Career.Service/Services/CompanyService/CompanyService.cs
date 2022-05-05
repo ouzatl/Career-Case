@@ -27,16 +27,21 @@ namespace Career.Service.Services.CompanyService
         {
             try
             {
-                var company = _mapper.Map<Company>(contract);
+                var companyResult = await _companyRepository.Get(contract.PhoneNumber);
 
-                company.MaxPostCount = 2;
-                company.IsActive = true;
-
-                var result = await _companyRepository.Add(company);
-
-                if (result != null)
+                if (companyResult.Count == 0)
                 {
-                    //response dön ve sarmala.
+                    var company = _mapper.Map<Company>(contract);
+
+                    company.MaxPostCount = 2;
+                    company.IsActive = true;
+
+                    var result = await _companyRepository.Add(company);
+
+                    if (result != null)
+                    {
+                        //response dön ve sarmala.
+                    }
                 }
             }
             catch (System.Exception ex)

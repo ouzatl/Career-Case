@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gU1nsgkLe2+JP0I6c8Cj8B56qtVbA1gKJBH9s5CVIvo6bde5ZGHUmb82wllHHe54oPitadLumwtYXCkHk8JmYA==",
+  "dgSpecHash": "8CokRl9X7KVCTyk+BDQ9siOj9L3APMGBvQEY60BPjRQoQPuRV8vLFDlX6HGA00H631vaAFA9CF420s2UKYsAUQ==",
   "success": true,
   "projectFilePath": "/Users/oguzatli/workspace/Career-Case/Career.API/Career.API.csproj",
   "expectedPackageFiles": [
@@ -78,10 +78,11 @@
     "/Users/oguzatli/.nuget/packages/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/stackexchange.redis/2.2.4/stackexchange.redis.2.2.4.nupkg.sha512",
-    "/Users/oguzatli/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
-    "/Users/oguzatli/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
-    "/Users/oguzatli/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
-    "/Users/oguzatli/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
+    "/Users/oguzatli/.nuget/packages/swashbuckle.aspnetcore/6.3.1/swashbuckle.aspnetcore.6.3.1.nupkg.sha512",
+    "/Users/oguzatli/.nuget/packages/swashbuckle.aspnetcore.annotations/6.3.1/swashbuckle.aspnetcore.annotations.6.3.1.nupkg.sha512",
+    "/Users/oguzatli/.nuget/packages/swashbuckle.aspnetcore.swagger/6.3.1/swashbuckle.aspnetcore.swagger.6.3.1.nupkg.sha512",
+    "/Users/oguzatli/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.3.1/swashbuckle.aspnetcore.swaggergen.6.3.1.nupkg.sha512",
+    "/Users/oguzatli/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.3.1/swashbuckle.aspnetcore.swaggerui.6.3.1.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/system.appcontext/4.3.0/system.appcontext.4.3.0.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/system.collections/4.3.0/system.collections.4.3.0.nupkg.sha512",
