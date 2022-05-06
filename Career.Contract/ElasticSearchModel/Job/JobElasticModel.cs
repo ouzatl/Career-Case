@@ -2,7 +2,6 @@ namespace Career.Contract.ElasticSearchModel.Job
 {
     public class JobElasticModel : ElasticEntity<string>
     {
-        public int Id { get; set; }
         public int CompanyId { get; set; }
         public string Position { get; set; }
         public string Description { get; set; }

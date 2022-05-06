@@ -7,7 +7,7 @@ namespace Career.Data.ElasticSearch
     {
         bool CreateIndex<T, TKey>(string index) where T : ElasticEntity<TKey>;
         bool ExistIndex(string indexName);
-        bool AddData<T, TKey>(string indexName, T data) where T : ElasticEntity<TKey>;
+        Task<bool> AddData<T, TKey>(string indexName, T data) where T : ElasticEntity<TKey>;
         Task<ISearchResponse<T>> SimpleSearch<T, TKey>(string indexName, SearchDescriptor<T> query) where T : ElasticEntity<TKey>;
     }
 }

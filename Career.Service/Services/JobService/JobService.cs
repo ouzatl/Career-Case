@@ -25,6 +25,8 @@ namespace Career.Service.Services.JobService
         private readonly ICompositeLogger _logger;
         private readonly IMapper _mapper;
         private readonly IPublishEndpoint _endpoint;
+        private readonly ISendEndpointProvider _endpoint2;
+
         private readonly IElasticSearchContext _elasticSearchContext;
 
 
@@ -36,7 +38,8 @@ namespace Career.Service.Services.JobService
             ICompositeLogger logger,
             IMapper mapper,
             IPublishEndpoint endpoint,
-            IElasticSearchContext elasticSearchContext
+            IElasticSearchContext elasticSearchContext,
+            ISendEndpointProvider endpoint2
             )
         {
             _jobRepository = jobRepository;
@@ -46,6 +49,7 @@ namespace Career.Service.Services.JobService
             _logger = logger;
             _mapper = mapper;
             _endpoint = endpoint;
+            _endpoint2 = endpoint2;
             _elasticSearchContext = elasticSearchContext;
         }
 
@@ -69,8 +73,9 @@ namespace Career.Service.Services.JobService
                     if (data != null)
                     {
                         await UpdateCompany(company);
-                        contract.Id = company.Id;
-                        await _endpoint.Publish<IJobChangedMessage>(new JobChangedMessage()
+
+                        var queue = await _endpoint2.GetSendEndpoint(new Uri("queue:test-queue"));
+                        await queue.Send(new JobChangedMessage
                         {
                             MessageId = Guid.NewGuid(),
                             Job = contract,
@@ -177,9 +182,9 @@ namespace Career.Service.Services.JobService
                                             || q.Match(m => m.Field(f => f.Description).Query(text))
                                             || q.Match(m => m.Field(f => f.TypeOfWork).Query(text))
                                           )
-                                          .Sort(a => a.Descending(s => s.Quailty));
+                                          .Sort(a => a.Descending(s => s.AvailableFrom));
 
-                var searchResult = await _elasticSearchContext.SimpleSearch<JobElasticModel, string>("JOB", searchQuery);
+                var searchResult = await _elasticSearchContext.SimpleSearch<JobElasticModel, string>("job", searchQuery);
                 result = searchResult.Documents.ToList();
             }
             catch (Exception ex)

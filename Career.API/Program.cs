@@ -5,8 +5,7 @@ using Career.Data.Mapper;
 using MassTransit;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-
-
+using RabbitMQ.Client;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,15 +35,31 @@ void QueueConnection(IServiceCollection services)
     var appSettingsSection = builder.Configuration.GetSection("QueueSettings");
     var appSettings = appSettingsSection.Get<QueueSettings>();
 
-    services.AddSingleton(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
-    {
-        cfg.Host(appSettings.HostName, appSettings.VirtualHost,
-        h =>
-        {
-            h.Username(appSettings.UserName);
-            h.Password(appSettings.Password);
-        });
-    }));
+    // services.AddSingleton(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
+    // {
+    //     cfg.Host(appSettings.HostName, appSettings.VirtualHost,
+    //     h =>
+    //     {
+    //         h.Username(appSettings.UserName);
+    //         h.Password(appSettings.UserNameappSettings.UserName);
+    //     });
+
+    //     cfg.ExchangeType = ExchangeType.Direct;
+    // }));
+
+
+    services.AddMassTransit(mt =>
+                {
+                    mt.UsingRabbitMq((context, cfg) =>
+                    {
+                        cfg.Host(appSettings.HostName, 5672, appSettings.VirtualHost, host =>
+                        {
+                            host.Username(appSettings.UserName);
+                            host.Password(appSettings.Password);
+                        });
+                    });
+                });
+    services.AddMassTransitHostedService();
 }
 
 void PostgresSqlConnection(IServiceCollection services)

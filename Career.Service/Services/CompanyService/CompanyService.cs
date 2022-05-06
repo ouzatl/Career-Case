@@ -28,7 +28,6 @@ namespace Career.Service.Services.CompanyService
             try
             {
                 var companyResult = await _companyRepository.Get(contract.PhoneNumber);
-
                 if (companyResult.Count == 0)
                 {
                     var company = _mapper.Map<Company>(contract);
@@ -37,11 +36,6 @@ namespace Career.Service.Services.CompanyService
                     company.IsActive = true;
 
                     var result = await _companyRepository.Add(company);
-
-                    if (result != null)
-                    {
-                        //response dön ve sarmala.
-                    }
                 }
             }
             catch (System.Exception ex)

@@ -2,11 +2,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Career Consumer",
+            "name": "Career Worker",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/Career.Consumer/bin/Debug/net6.0/Career.Consumer.dll",
+            "program": "${workspaceFolder}/Career.Worker/bin/Debug/net6.0/Career.Worker.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
@@ -49,9 +49,9 @@
     ],
     "compounds": [
         {
-            "name": "Career API - Consumer",
+            "name": "Career API - Worker",
             "configurations": [
-                "Career API","Career Consumer"
+                "Career API","Career Worker"
             ]
         }
     ]

@@ -49,14 +49,14 @@ namespace Career.Data.ElasticSearch
             return result.Acknowledged;
         }
 
-        public bool AddData<T, TKey>(string indexName, T data) where T : ElasticEntity<TKey>
+        public async Task<bool> AddData<T, TKey>(string indexName, T data) where T : ElasticEntity<TKey>
         {
             bool result = false;
 
             try
             {
                 if (CreateIndex<T, TKey>(indexName))
-                    result = InsertDocument<T, TKey>(indexName, data);
+                    result = await InsertDocument<T, TKey>(indexName, data);
             }
             catch (System.Exception ex)
             {
@@ -66,11 +66,11 @@ namespace Career.Data.ElasticSearch
             return result;
         }
 
-        private bool InsertDocument<T, TKey>(string indexName, T data) where T : ElasticEntity<TKey>
+        private async Task<bool> InsertDocument<T, TKey>(string indexName, T data) where T : ElasticEntity<TKey>
         {
-            var result = Client.Index(data, ss => ss.Index(indexName));
+            var result = await Client.IndexAsync(data, ss => ss.Index(indexName));
             if (result.ApiCall?.HttpStatusCode == (int)HttpStatusCode.Conflict)
-                Client.Update<T>(result.Id, a => a.Index(indexName).Doc(data));
+                await Client.UpdateAsync<T>(result.Id, a => a.Index(indexName).Doc(data));
 
             return true;
         }

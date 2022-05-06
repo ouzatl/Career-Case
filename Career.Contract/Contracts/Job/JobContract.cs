@@ -4,8 +4,6 @@ namespace Career.Contract.Contracts.Job
 {
     public class JobContract
     {
-        [SwaggerSchema(ReadOnly = true)]
-        public int Id { get; set; }
         public int CompanyId { get; set; }
         public string Position { get; set; }
         public string Description { get; set; }
