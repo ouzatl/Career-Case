@@ -2,7 +2,7 @@ using Career.Common.Configuration;
 using Career.Common.Constants;
 using Microsoft.Extensions.Configuration;
 
-namespace Career.Data.ElasticSearch
+namespace Career.ElasticSearch.ElasticSearch
 {
     public class ElasticSearchConfiguration : IElasticSearchConfiguration
     {

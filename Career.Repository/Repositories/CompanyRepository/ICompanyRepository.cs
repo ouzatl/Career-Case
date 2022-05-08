@@ -1,6 +1,6 @@
 using Career.Data.Models;
 
-namespace Career.Data.Repositories.CompanyRepository
+namespace Career.Repository.Repositories.CompanyRepository
 {
     public interface ICompanyRepository : IBaseRepository<Company>
     {

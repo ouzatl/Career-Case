@@ -1,7 +1,8 @@
+using Career.Data;
 using Career.Data.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Career.Data.Repositories.CompanyRepository
+namespace Career.Repository.Repositories.CompanyRepository
 {
     public class CompanyRepository : BaseRepository<Company>, ICompanyRepository
     {

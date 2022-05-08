@@ -1,6 +1,7 @@
+using Career.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace Career.Data.Repositories
+namespace Career.Repository.Repositories
 {
     public abstract class BaseRepository<T> : IBaseRepository<T> where T : class
     {

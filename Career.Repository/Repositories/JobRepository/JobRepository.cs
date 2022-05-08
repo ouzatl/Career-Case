@@ -1,7 +1,8 @@
+using Career.Data;
 using Career.Data.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Career.Data.Repositories.JobRepository
+namespace Career.Repository.Repositories.JobRepository
 {
     public class JobRepository : BaseRepository<Job>, IJobRepository
     {

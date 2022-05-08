@@ -1,7 +1,7 @@
 using Career.Contract.ElasticSearchModel;
 using Nest;
 
-namespace Career.Data.ElasticSearch
+namespace Career.ElasticSearch.ElasticSearch
 {
     public interface IElasticSearchContext
     {

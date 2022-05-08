@@ -3,7 +3,7 @@ using Career.Contract.Contracts.Company;
 using Career.Contract.Contracts.Job;
 using Career.Data.Models;
 
-namespace Career.Data.Mapper
+namespace Career.Common.Mapper
 {
     public class Mapping : Profile
     {

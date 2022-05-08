@@ -1,4 +1,4 @@
-namespace Career.Data.Mapper
+namespace Career.Common.Mapper
 {
     public interface IMapping
     {

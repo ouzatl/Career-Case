@@ -3,7 +3,7 @@ using Career.Common.Logging;
 using Career.Contract.ElasticSearchModel;
 using Nest;
 
-namespace Career.Data.ElasticSearch
+namespace Career.ElasticSearch.ElasticSearch
 {
     public class ElasticSearchContext : IElasticSearchContext
     {

@@ -1,4 +1,4 @@
-namespace Career.Data.Repositories
+namespace Career.Repository.Repositories
 {
     public interface IBaseRepository<T> where T : class
     {
