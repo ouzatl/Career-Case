@@ -1,8 +1,10 @@
+using System.Reflection;
 using Career.API;
 using Career.API.ActionFilter;
 using Career.Common.Configuration;
 using Career.Common.Mapper;
 using Career.Data;
+using FluentValidation.AspNetCore;
 using MassTransit;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -26,6 +28,8 @@ QueueConnection(services);
 DependencyInjection(services);
 //AutoMapper
 services.AddAutoMapper(typeof(Mapping));
+
+ModelFilter(services);
 
 #region Methods
 
@@ -90,9 +94,25 @@ void DependencyInjection(IServiceCollection services)
     dependency.Register();
 }
 
+
+void ModelFilter(IServiceCollection services)
+{
+
+}
+
 #endregion
 
-services.AddControllers();
+services.AddControllers(options =>
+                {
+                    options.Filters.Add(new ValidationFilter());
+                })
+                .AddFluentValidation(options =>
+                {
+                    options.ImplicitlyValidateChildProperties = true;
+                    options.ImplicitlyValidateRootCollectionElements = true;
+                    options.RegisterValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+                });
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 services.AddEndpointsApiExplorer();
 

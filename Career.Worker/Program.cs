@@ -38,6 +38,7 @@ IHost host = Host.CreateDefaultBuilder(args)
 
                 x.AddConsumer<JobChangedMessageConsumer>();
             });
+
         services.AddMassTransitHostedService();
     })
     .Build();

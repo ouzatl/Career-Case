@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "ld4zhx87JUJUk1pS/oA+yzCecVPaa0ytzpJ6kF8XyrKJb1WQmbvm9Djwf/IHB8/0YWDuCqe4wnzzBa9dRPvvbw==",
+  "dgSpecHash": "tFOtitMEDidgjb+opbfqrBlxc+AYlAPURX0iVwNjVyJPbu7kjSU26actUsz/UQSvAP2O3YkHAJk3m05rDhnGCA==",
   "success": true,
   "projectFilePath": "/Users/oguzatli/workspace/Career-Case/Career.Common/Career.Common.csproj",
   "expectedPackageFiles": [
     "/Users/oguzatli/.nuget/packages/automapper/11.0.1/automapper.11.0.1.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/11.0.0/automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/elasticsearch.net/7.17.1/elasticsearch.net.7.17.1.nupkg.sha512",
+    "/Users/oguzatli/.nuget/packages/fluentvalidation/11.0.1/fluentvalidation.11.0.1.nupkg.sha512",
+    "/Users/oguzatli/.nuget/packages/fluentvalidation.aspnetcore/11.0.1/fluentvalidation.aspnetcore.11.0.1.nupkg.sha512",
+    "/Users/oguzatli/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.0.1/fluentvalidation.dependencyinjectionextensions.11.0.1.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/masstransit/8.0.2/masstransit.8.0.2.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/masstransit.abstractions/8.0.2/masstransit.abstractions.8.0.2.nupkg.sha512",

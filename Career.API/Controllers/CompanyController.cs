@@ -1,6 +1,7 @@
 using Career.Common.Logging;
 using Career.Contract.Contracts.Company;
 using Career.Service.Services.CompanyService;
+using FluentValidationDemo.Validation;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Career.API.Controllers;
@@ -25,10 +26,9 @@ public class CompanyController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Add(CompanyContract contract)
     {
-        if (contract == null ||
-        string.IsNullOrEmpty(contract.PhoneNumber) ||
-        string.IsNullOrEmpty(contract.Name) ||
-        string.IsNullOrEmpty(contract.Address))
+        var companyConractValidator = new CompanyContractValidator();
+        var validatorResult = companyConractValidator.Validate(contract);
+        if (!validatorResult.IsValid)
             return BadRequest();
 
         await _companyService.Add(contract);

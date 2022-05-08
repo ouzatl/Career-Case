@@ -12,6 +12,9 @@
 /Users/oguzatli/workspace/Career-Case/Career.Test/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /Users/oguzatli/workspace/Career-Case/Career.Test/bin/Debug/net6.0/Castle.Core.dll
 /Users/oguzatli/workspace/Career-Case/Career.Test/bin/Debug/net6.0/Elasticsearch.Net.dll
+/Users/oguzatli/workspace/Career-Case/Career.Test/bin/Debug/net6.0/FluentValidation.dll
+/Users/oguzatli/workspace/Career-Case/Career.Test/bin/Debug/net6.0/FluentValidation.AspNetCore.dll
+/Users/oguzatli/workspace/Career-Case/Career.Test/bin/Debug/net6.0/FluentValidation.DependencyInjectionExtensions.dll
 /Users/oguzatli/workspace/Career-Case/Career.Test/bin/Debug/net6.0/MassTransit.dll
 /Users/oguzatli/workspace/Career-Case/Career.Test/bin/Debug/net6.0/MassTransit.Abstractions.dll
 /Users/oguzatli/workspace/Career-Case/Career.Test/bin/Debug/net6.0/MassTransit.ExtensionsDependencyInjectionIntegration.dll
@@ -53,6 +56,8 @@
 /Users/oguzatli/workspace/Career-Case/Career.Test/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
 /Users/oguzatli/workspace/Career-Case/Career.Test/bin/Debug/net6.0/NuGet.Frameworks.dll
 /Users/oguzatli/workspace/Career-Case/Career.Test/bin/Debug/net6.0/Pipelines.Sockets.Unofficial.dll
+/Users/oguzatli/workspace/Career-Case/Career.Test/bin/Debug/net6.0/protobuf-net.dll
+/Users/oguzatli/workspace/Career-Case/Career.Test/bin/Debug/net6.0/protobuf-net.Core.dll
 /Users/oguzatli/workspace/Career-Case/Career.Test/bin/Debug/net6.0/RabbitMQ.Client.dll
 /Users/oguzatli/workspace/Career-Case/Career.Test/bin/Debug/net6.0/StackExchange.Redis.dll
 /Users/oguzatli/workspace/Career-Case/Career.Test/bin/Debug/net6.0/Swashbuckle.AspNetCore.Annotations.dll
@@ -173,5 +178,3 @@
 /Users/oguzatli/workspace/Career-Case/Career.Test/obj/Debug/net6.0/Career.Test.pdb
 /Users/oguzatli/workspace/Career-Case/Career.Test/obj/Debug/net6.0/Career.Test.genruntimeconfig.cache
 /Users/oguzatli/workspace/Career-Case/Career.Test/obj/Debug/net6.0/ref/Career.Test.dll
-/Users/oguzatli/workspace/Career-Case/Career.Test/bin/Debug/net6.0/protobuf-net.dll
-/Users/oguzatli/workspace/Career-Case/Career.Test/bin/Debug/net6.0/protobuf-net.Core.dll

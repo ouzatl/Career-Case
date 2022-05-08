@@ -82,6 +82,38 @@
           }
         }
       },
+      "FluentValidation/11.0.1": {
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.1.0"
+          }
+        }
+      },
+      "FluentValidation.AspNetCore/11.0.1": {
+        "dependencies": {
+          "FluentValidation": "11.0.1",
+          "FluentValidation.DependencyInjectionExtensions": "11.0.1"
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.1.0"
+          }
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/11.0.1": {
+        "dependencies": {
+          "FluentValidation": "11.0.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.1.0"
+          }
+        }
+      },
       "MassTransit/8.0.2": {
         "dependencies": {
           "MassTransit.Abstractions": "8.0.2",
@@ -1907,6 +1939,7 @@
           "Career.Contract": "1.0.0",
           "Career.Data": "1.0.0",
           "Elasticsearch.Net": "7.17.1",
+          "FluentValidation.AspNetCore": "11.0.1",
           "MassTransit": "8.0.2",
           "MassTransit.Extensions.DependencyInjection": "7.3.1",
           "MassTransit.RabbitMQ": "8.0.2",
@@ -2024,6 +2057,27 @@
       "sha512": "sha512-dWLfw4aYoY+pi7xhKx4sJJduPWk7g47JCMOjM6Te9RNvw5S7D3nIdhmQolCXEH5CRQT3/sa/IzrQAQLMN1yQVA==",
       "path": "elasticsearch.net/7.17.1",
       "hashPath": "elasticsearch.net.7.17.1.nupkg.sha512"
+    },
+    "FluentValidation/11.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fcL5zF/glDwskUtpL0IfBupVWTChxOOvVs+dAA7Gme5NjIeJBiFKWq3eZV1O+AigucnBTr8SWG7wRRn+PgFnTw==",
+      "path": "fluentvalidation/11.0.1",
+      "hashPath": "fluentvalidation.11.0.1.nupkg.sha512"
+    },
+    "FluentValidation.AspNetCore/11.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fF7GiMrRJB1ZDQeSTI3pfAXO8eJDKlWs4rhzx8DIuEQKodgvo5QiMtMEfIbLnkZX2+GmofwDm64LZ8Qw+9zubg==",
+      "path": "fluentvalidation.aspnetcore/11.0.1",
+      "hashPath": "fluentvalidation.aspnetcore.11.0.1.nupkg.sha512"
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-B+jlYk4L6Ucj1yvpo0R9uelKjtC48CJDDPHF4ct/zBMwkrZoDDvBAqRwuNDChnjsjCr3NgJHyuETh4t2VTGUzQ==",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.0.1",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.11.0.1.nupkg.sha512"
     },
     "MassTransit/8.0.2": {
       "type": "package",

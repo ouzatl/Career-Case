@@ -1,6 +1,7 @@
 using Career.Common.Logging;
 using Career.Contract.Contracts.Job;
 using Career.Service.Services.JobService;
+using FluentValidationDemo.Validation;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Career.API.Controllers;
@@ -25,12 +26,9 @@ public class JobController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Add(JobContract contract)
     {
-        //filter yaz
-        if (contract == null ||
-        string.IsNullOrEmpty(contract.Position) ||
-        string.IsNullOrEmpty(contract.Description) ||
-        contract.AvailableFrom == null ||
-        contract.CompanyId <= default(int))
+        var jobConractValidator = new JobContractValidator();
+        var validatorResult = jobConractValidator.Validate(contract);
+        if (!validatorResult.IsValid)
             return BadRequest();
 
         var result = await _jobService.Add(contract);

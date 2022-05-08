@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GMT1eNtNpd5FR3BRz0egOwOm890bpIHPTTss5iP1lEpOlvDWl05jc3ifx33/cEJmmOwcvud1whdRKtOcOJTfzQ==",
+  "dgSpecHash": "IfTHy9mkCF4kcuM17KD9gWlWvqD4qTBJAZWOJz+bGnrVyhmFrB6eE0W4VLCfHuS3hgRrIZORitLXI2nF+KeUxA==",
   "success": true,
   "projectFilePath": "/Users/oguzatli/workspace/Career-Case/Career.Test/Career.Test.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,9 @@
     "/Users/oguzatli/.nuget/packages/castle.core/4.4.1/castle.core.4.4.1.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/coverlet.collector/3.1.0/coverlet.collector.3.1.0.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/elasticsearch.net/7.17.1/elasticsearch.net.7.17.1.nupkg.sha512",
+    "/Users/oguzatli/.nuget/packages/fluentvalidation/11.0.1/fluentvalidation.11.0.1.nupkg.sha512",
+    "/Users/oguzatli/.nuget/packages/fluentvalidation.aspnetcore/11.0.1/fluentvalidation.aspnetcore.11.0.1.nupkg.sha512",
+    "/Users/oguzatli/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.0.1/fluentvalidation.dependencyinjectionextensions.11.0.1.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/masstransit/8.0.2/masstransit.8.0.2.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/masstransit.abstractions/8.0.2/masstransit.abstractions.8.0.2.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/masstransit.extensions.dependencyinjection/7.3.1/masstransit.extensions.dependencyinjection.7.3.1.nupkg.sha512",

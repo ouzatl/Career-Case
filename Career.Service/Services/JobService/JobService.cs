@@ -55,7 +55,7 @@ namespace Career.Service.Services.JobService
 
         public async Task<bool> Add(JobContract contract)
         {
-            var result = true;
+            var result = false;
             try
             {
                 var company = await _companyRepository.Get(contract.CompanyId);
