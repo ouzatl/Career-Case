@@ -24,6 +24,7 @@
     <ProjectReference Include="..\Career.Service\Career.Service.csproj" />
     <ProjectReference Include="..\Career.Contract\Career.Contract.csproj" />
     <ProjectReference Include="..\Career.Data\Career.Data.csproj" />
+    <ProjectReference Include="..\Career.ElasticSearch\Career.ElasticSearch.csproj" />
   </ItemGroup>
 
 </Project>

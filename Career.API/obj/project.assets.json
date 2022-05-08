@@ -776,6 +776,27 @@
           "lib/net5.0/Pipelines.Sockets.Unofficial.dll": {}
         }
       },
+      "protobuf-net/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "protobuf-net.Core": "3.1.0"
+        },
+        "compile": {
+          "lib/net5.0/protobuf-net.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/protobuf-net.dll": {}
+        }
+      },
+      "protobuf-net.Core/3.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/protobuf-net.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/protobuf-net.Core.dll": {}
+        }
+      },
       "RabbitMQ.Client/6.2.4": {
         "type": "package",
         "dependencies": {
@@ -2229,6 +2250,8 @@
         "dependencies": {
           "AutoMapper": "11.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
+          "Career.Contract": "1.0.0",
+          "Career.Data": "1.0.0",
           "Elasticsearch.Net": "7.17.1",
           "MassTransit": "8.0.2",
           "MassTransit.Extensions.DependencyInjection": "7.3.1",
@@ -2246,7 +2269,8 @@
           "Swashbuckle.AspNetCore": "6.3.1",
           "Swashbuckle.AspNetCore.Annotations": "6.3.1",
           "Swashbuckle.AspNetCore.Swagger": "6.3.1",
-          "Swashbuckle.AspNetCore.SwaggerGen": "6.3.1"
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.3.1",
+          "protobuf-net": "3.1.0"
         },
         "compile": {
           "bin/placeholder/Career.Common.dll": {}
@@ -2259,7 +2283,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Career.Common": "1.0.0"
+          "protobuf-net": "3.1.0"
         },
         "compile": {
           "bin/placeholder/Career.Contract.dll": {}
@@ -2272,8 +2296,11 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Career.Common": "1.0.0",
           "Career.Contract": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.4",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.4",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.4",
           "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0"
         },
         "compile": {
@@ -2283,13 +2310,44 @@
           "bin/placeholder/Career.Data.dll": {}
         }
       },
-      "Career.Service/1.0.0": {
+      "Career.ElasticSearch/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Career.Common": "1.0.0",
+          "Career.Contract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Career.ElasticSearch.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Career.ElasticSearch.dll": {}
+        }
+      },
+      "Career.Repository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Career.Common": "1.0.0",
           "Career.Contract": "1.0.0",
           "Career.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Career.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Career.Repository.dll": {}
+        }
+      },
+      "Career.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Career.Common": "1.0.0",
+          "Career.Contract": "1.0.0",
+          "Career.Data": "1.0.0",
+          "Career.ElasticSearch": "1.0.0",
+          "Career.Repository": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Career.Service.dll": {}
@@ -3522,6 +3580,50 @@
         "lib/netstandard2.1/Pipelines.Sockets.Unofficial.xml",
         "pipelines.sockets.unofficial.2.2.0.nupkg.sha512",
         "pipelines.sockets.unofficial.nuspec"
+      ]
+    },
+    "protobuf-net/3.1.0": {
+      "sha512": "dZjLX2TzcEkPy/oZfCB/GE32+oJlX58w/zNMkJ1JPdMeO1oTSfiXVxgFagya8xblBhHpr1v4PBbt3Q13Yvvtwg==",
+      "type": "package",
+      "path": "protobuf-net/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/protobuf-net.dll",
+        "lib/net461/protobuf-net.xml",
+        "lib/net5.0/protobuf-net.dll",
+        "lib/net5.0/protobuf-net.xml",
+        "lib/netcoreapp3.1/protobuf-net.dll",
+        "lib/netcoreapp3.1/protobuf-net.xml",
+        "lib/netstandard2.0/protobuf-net.dll",
+        "lib/netstandard2.0/protobuf-net.xml",
+        "lib/netstandard2.1/protobuf-net.dll",
+        "lib/netstandard2.1/protobuf-net.xml",
+        "protobuf-net.3.1.0.nupkg.sha512",
+        "protobuf-net.nuspec",
+        "protobuf-net.png"
+      ]
+    },
+    "protobuf-net.Core/3.1.0": {
+      "sha512": "lnirDSIBK6bG7DPae3m6L8IcQsUGmMrTKXuoGDspquOpFxla0zMKUUGUkM2XB76cHrVp2+EcZXlYnXz0lf0U2w==",
+      "type": "package",
+      "path": "protobuf-net.core/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/protobuf-net.Core.dll",
+        "lib/net461/protobuf-net.Core.xml",
+        "lib/net5.0/protobuf-net.Core.dll",
+        "lib/net5.0/protobuf-net.Core.xml",
+        "lib/netcoreapp3.1/protobuf-net.Core.dll",
+        "lib/netcoreapp3.1/protobuf-net.Core.xml",
+        "lib/netstandard2.0/protobuf-net.Core.dll",
+        "lib/netstandard2.0/protobuf-net.Core.xml",
+        "lib/netstandard2.1/protobuf-net.Core.dll",
+        "lib/netstandard2.1/protobuf-net.Core.xml",
+        "protobuf-net.core.3.1.0.nupkg.sha512",
+        "protobuf-net.core.nuspec",
+        "protobuf-net.png"
       ]
     },
     "RabbitMQ.Client/6.2.4": {
@@ -7558,6 +7660,16 @@
       "path": "../Career.Data/Career.Data.csproj",
       "msbuildProject": "../Career.Data/Career.Data.csproj"
     },
+    "Career.ElasticSearch/1.0.0": {
+      "type": "project",
+      "path": "../Career.ElasticSearch/Career.ElasticSearch.csproj",
+      "msbuildProject": "../Career.ElasticSearch/Career.ElasticSearch.csproj"
+    },
+    "Career.Repository/1.0.0": {
+      "type": "project",
+      "path": "../Career.Repository/Career.Repository.csproj",
+      "msbuildProject": "../Career.Repository/Career.Repository.csproj"
+    },
     "Career.Service/1.0.0": {
       "type": "project",
       "path": "../Career.Service/Career.Service.csproj",
@@ -7569,6 +7681,7 @@
       "Career.Common >= 1.0.0",
       "Career.Contract >= 1.0.0",
       "Career.Data >= 1.0.0",
+      "Career.ElasticSearch >= 1.0.0",
       "Career.Service >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.4",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.4",
@@ -7609,6 +7722,9 @@
             },
             "/Users/oguzatli/workspace/Career-Case/Career.Data/Career.Data.csproj": {
               "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Data/Career.Data.csproj"
+            },
+            "/Users/oguzatli/workspace/Career-Case/Career.ElasticSearch/Career.ElasticSearch.csproj": {
+              "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.ElasticSearch/Career.ElasticSearch.csproj"
             },
             "/Users/oguzatli/workspace/Career-Case/Career.Service/Career.Service.csproj": {
               "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Service/Career.Service.csproj"

@@ -1,10 +1,10 @@
 using Career.Common.Logging;
-using Career.Data.ElasticSearch;
-using Career.Data.Repositories.BannedWordsRepository;
-using Career.Data.Repositories.CompanyRepository;
-using Career.Data.Repositories.JobRepository;
+using Career.Repository.Repositories.JobRepository;
+using Career.Repository.Repositories.BannedWordsRepository;
 using Career.Service.Services.CompanyService;
 using Career.Service.Services.JobService;
+using Career.Repository.Repositories.CompanyRepository;
+using Career.ElasticSearch.ElasticSearch;
 
 namespace Career.Worker
 {

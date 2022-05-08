@@ -1,7 +1,7 @@
 using Career.Common.Logging;
 using Career.Contract.ElasticSearchModel.Job;
 using Career.Contract.Job;
-using Career.Data.ElasticSearch;
+using Career.ElasticSearch.ElasticSearch;
 using MassTransit;
 
 namespace Career.Worker.Consumers

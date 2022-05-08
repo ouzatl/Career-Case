@@ -4,9 +4,13 @@
 /Users/oguzatli/workspace/Career-Case/Career.Service/bin/Debug/net6.0/Career.Common.dll
 /Users/oguzatli/workspace/Career-Case/Career.Service/bin/Debug/net6.0/Career.Contract.dll
 /Users/oguzatli/workspace/Career-Case/Career.Service/bin/Debug/net6.0/Career.Data.dll
+/Users/oguzatli/workspace/Career-Case/Career.Service/bin/Debug/net6.0/Career.ElasticSearch.dll
+/Users/oguzatli/workspace/Career-Case/Career.Service/bin/Debug/net6.0/Career.Repository.dll
 /Users/oguzatli/workspace/Career-Case/Career.Service/bin/Debug/net6.0/Career.Common.pdb
 /Users/oguzatli/workspace/Career-Case/Career.Service/bin/Debug/net6.0/Career.Data.pdb
 /Users/oguzatli/workspace/Career-Case/Career.Service/bin/Debug/net6.0/Career.Contract.pdb
+/Users/oguzatli/workspace/Career-Case/Career.Service/bin/Debug/net6.0/Career.Repository.pdb
+/Users/oguzatli/workspace/Career-Case/Career.Service/bin/Debug/net6.0/Career.ElasticSearch.pdb
 /Users/oguzatli/workspace/Career-Case/Career.Service/obj/Debug/net6.0/Career.Service.csproj.AssemblyReference.cache
 /Users/oguzatli/workspace/Career-Case/Career.Service/obj/Debug/net6.0/Career.Service.GeneratedMSBuildEditorConfig.editorconfig
 /Users/oguzatli/workspace/Career-Case/Career.Service/obj/Debug/net6.0/Career.Service.AssemblyInfoInputs.cache

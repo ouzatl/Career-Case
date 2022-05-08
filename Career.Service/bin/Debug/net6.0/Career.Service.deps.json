@@ -10,7 +10,9 @@
         "dependencies": {
           "Career.Common": "1.0.0",
           "Career.Contract": "1.0.0",
-          "Career.Data": "1.0.0"
+          "Career.Data": "1.0.0",
+          "Career.ElasticSearch": "1.0.0",
+          "Career.Repository": "1.0.0"
         },
         "runtime": {
           "Career.Service.dll": {}
@@ -570,6 +572,25 @@
           "lib/net5.0/Pipelines.Sockets.Unofficial.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "2.2.0.45337"
+          }
+        }
+      },
+      "protobuf-net/3.1.0": {
+        "dependencies": {
+          "protobuf-net.Core": "3.1.0"
+        },
+        "runtime": {
+          "lib/net5.0/protobuf-net.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.1.0.42307"
+          }
+        }
+      },
+      "protobuf-net.Core/3.1.0": {
+        "runtime": {
+          "lib/net5.0/protobuf-net.Core.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.1.0.42307"
           }
         }
       },
@@ -1393,6 +1414,8 @@
         "dependencies": {
           "AutoMapper": "11.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
+          "Career.Contract": "1.0.0",
+          "Career.Data": "1.0.0",
           "Elasticsearch.Net": "7.17.1",
           "MassTransit": "8.0.2",
           "MassTransit.Extensions.DependencyInjection": "7.3.1",
@@ -1410,7 +1433,8 @@
           "Swashbuckle.AspNetCore": "6.3.1",
           "Swashbuckle.AspNetCore.Annotations": "6.3.1",
           "Swashbuckle.AspNetCore.Swagger": "6.3.1",
-          "Swashbuckle.AspNetCore.SwaggerGen": "6.3.1"
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.3.1",
+          "protobuf-net": "3.1.0"
         },
         "runtime": {
           "Career.Common.dll": {}
@@ -1418,7 +1442,7 @@
       },
       "Career.Contract/1.0.0": {
         "dependencies": {
-          "Career.Common": "1.0.0"
+          "protobuf-net": "3.1.0"
         },
         "runtime": {
           "Career.Contract.dll": {}
@@ -1426,12 +1450,34 @@
       },
       "Career.Data/1.0.0": {
         "dependencies": {
-          "Career.Common": "1.0.0",
           "Career.Contract": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.4",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.4",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.4",
           "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0"
         },
         "runtime": {
           "Career.Data.dll": {}
+        }
+      },
+      "Career.ElasticSearch/1.0.0": {
+        "dependencies": {
+          "Career.Common": "1.0.0",
+          "Career.Contract": "1.0.0"
+        },
+        "runtime": {
+          "Career.ElasticSearch.dll": {}
+        }
+      },
+      "Career.Repository/1.0.0": {
+        "dependencies": {
+          "Career.Common": "1.0.0",
+          "Career.Contract": "1.0.0",
+          "Career.Data": "1.0.0"
+        },
+        "runtime": {
+          "Career.Repository.dll": {}
         }
       }
     }
@@ -1812,6 +1858,20 @@
       "sha512": "sha512-7hzHplEIVOGBl5zOQZGX/DiJDHjq+RVRVrYgDiqXb6RriqWAdacXxp+XO9WSrATCEXyNOUOQg9aqQArsjase/A==",
       "path": "pipelines.sockets.unofficial/2.2.0",
       "hashPath": "pipelines.sockets.unofficial.2.2.0.nupkg.sha512"
+    },
+    "protobuf-net/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dZjLX2TzcEkPy/oZfCB/GE32+oJlX58w/zNMkJ1JPdMeO1oTSfiXVxgFagya8xblBhHpr1v4PBbt3Q13Yvvtwg==",
+      "path": "protobuf-net/3.1.0",
+      "hashPath": "protobuf-net.3.1.0.nupkg.sha512"
+    },
+    "protobuf-net.Core/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lnirDSIBK6bG7DPae3m6L8IcQsUGmMrTKXuoGDspquOpFxla0zMKUUGUkM2XB76cHrVp2+EcZXlYnXz0lf0U2w==",
+      "path": "protobuf-net.core/3.1.0",
+      "hashPath": "protobuf-net.core.3.1.0.nupkg.sha512"
     },
     "RabbitMQ.Client/6.2.4": {
       "type": "package",
@@ -2482,6 +2542,16 @@
       "sha512": ""
     },
     "Career.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Career.ElasticSearch/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Career.Repository/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

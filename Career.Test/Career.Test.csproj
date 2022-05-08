@@ -9,9 +9,20 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <PackageReference Include="Moq" Version="4.17.2" />
     <PackageReference Include="MSTest.TestAdapter" Version="2.2.7" />
     <PackageReference Include="MSTest.TestFramework" Version="2.2.7" />
     <PackageReference Include="coverlet.collector" Version="3.1.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Career.Contract\Career.Contract.csproj" />
+    <ProjectReference Include="..\Career.Common\Career.Common.csproj" />
+    <ProjectReference Include="..\Career.Service\Career.Service.csproj" />
+    <ProjectReference Include="..\Career.Data\Career.Data.csproj" />
+    <ProjectReference Include="..\Career.Repository\Career.Repository.csproj" />
+    <ProjectReference Include="..\Career.ElasticSearch\Career.ElasticSearch.csproj" />
   </ItemGroup>
 
 </Project>

@@ -71,11 +71,15 @@
 /Users/oguzatli/workspace/Career-Case/Career.Worker/bin/Debug/net6.0/Career.Common.dll
 /Users/oguzatli/workspace/Career-Case/Career.Worker/bin/Debug/net6.0/Career.Contract.dll
 /Users/oguzatli/workspace/Career-Case/Career.Worker/bin/Debug/net6.0/Career.Data.dll
+/Users/oguzatli/workspace/Career-Case/Career.Worker/bin/Debug/net6.0/Career.ElasticSearch.dll
+/Users/oguzatli/workspace/Career-Case/Career.Worker/bin/Debug/net6.0/Career.Repository.dll
 /Users/oguzatli/workspace/Career-Case/Career.Worker/bin/Debug/net6.0/Career.Service.dll
 /Users/oguzatli/workspace/Career-Case/Career.Worker/bin/Debug/net6.0/Career.Contract.pdb
 /Users/oguzatli/workspace/Career-Case/Career.Worker/bin/Debug/net6.0/Career.Common.pdb
 /Users/oguzatli/workspace/Career-Case/Career.Worker/bin/Debug/net6.0/Career.Service.pdb
 /Users/oguzatli/workspace/Career-Case/Career.Worker/bin/Debug/net6.0/Career.Data.pdb
+/Users/oguzatli/workspace/Career-Case/Career.Worker/bin/Debug/net6.0/Career.Repository.pdb
+/Users/oguzatli/workspace/Career-Case/Career.Worker/bin/Debug/net6.0/Career.ElasticSearch.pdb
 /Users/oguzatli/workspace/Career-Case/Career.Worker/obj/Debug/net6.0/Career.Worker.csproj.AssemblyReference.cache
 /Users/oguzatli/workspace/Career-Case/Career.Worker/obj/Debug/net6.0/Career.Worker.GeneratedMSBuildEditorConfig.editorconfig
 /Users/oguzatli/workspace/Career-Case/Career.Worker/obj/Debug/net6.0/Career.Worker.AssemblyInfoInputs.cache
@@ -87,3 +91,5 @@
 /Users/oguzatli/workspace/Career-Case/Career.Worker/obj/Debug/net6.0/Career.Worker.pdb
 /Users/oguzatli/workspace/Career-Case/Career.Worker/obj/Debug/net6.0/Career.Worker.genruntimeconfig.cache
 /Users/oguzatli/workspace/Career-Case/Career.Worker/obj/Debug/net6.0/ref/Career.Worker.dll
+/Users/oguzatli/workspace/Career-Case/Career.Worker/bin/Debug/net6.0/protobuf-net.dll
+/Users/oguzatli/workspace/Career-Case/Career.Worker/bin/Debug/net6.0/protobuf-net.Core.dll

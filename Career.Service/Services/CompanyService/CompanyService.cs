@@ -2,7 +2,7 @@ using AutoMapper;
 using Career.Common.Logging;
 using Career.Contract.Contracts.Company;
 using Career.Data.Models;
-using Career.Data.Repositories.CompanyRepository;
+using Career.Repository.Repositories.CompanyRepository;
 
 namespace Career.Service.Services.CompanyService
 {

@@ -4,14 +4,171 @@
     "/Users/oguzatli/workspace/Career-Case/Career.Test/Career.Test.csproj": {}
   },
   "projects": {
-    "/Users/oguzatli/workspace/Career-Case/Career.Test/Career.Test.csproj": {
+    "/Users/oguzatli/workspace/Career-Case/Career.Common/Career.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/oguzatli/workspace/Career-Case/Career.Test/Career.Test.csproj",
-        "projectName": "Career.Test",
-        "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Test/Career.Test.csproj",
+        "projectUniqueName": "/Users/oguzatli/workspace/Career-Case/Career.Common/Career.Common.csproj",
+        "projectName": "Career.Common",
+        "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Common/Career.Common.csproj",
         "packagesPath": "/Users/oguzatli/.nuget/packages/",
-        "outputPath": "/Users/oguzatli/workspace/Career-Case/Career.Test/obj/",
+        "outputPath": "/Users/oguzatli/workspace/Career-Case/Career.Common/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/oguzatli/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/oguzatli/workspace/Career-Case/Career.Contract/Career.Contract.csproj": {
+                "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Contract/Career.Contract.csproj"
+              },
+              "/Users/oguzatli/workspace/Career-Case/Career.Data/Career.Data.csproj": {
+                "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Data/Career.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Elasticsearch.Net": {
+              "target": "Package",
+              "version": "[7.17.1, )"
+            },
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "MassTransit.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "NEST": {
+              "target": "Package",
+              "version": "[7.17.1, )"
+            },
+            "NEST.JsonNetSerializer": {
+              "target": "Package",
+              "version": "[7.17.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.1, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[6.3.1, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.3.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.3.1, )"
+            },
+            "protobuf-net": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/oguzatli/workspace/Career-Case/Career.Contract/Career.Contract.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/oguzatli/workspace/Career-Case/Career.Contract/Career.Contract.csproj",
+        "projectName": "Career.Contract",
+        "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Contract/Career.Contract.csproj",
+        "packagesPath": "/Users/oguzatli/.nuget/packages/",
+        "outputPath": "/Users/oguzatli/workspace/Career-Case/Career.Contract/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/oguzatli/.nuget/NuGet/NuGet.Config"
@@ -38,6 +195,362 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "protobuf-net": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/oguzatli/workspace/Career-Case/Career.Data/Career.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/oguzatli/workspace/Career-Case/Career.Data/Career.Data.csproj",
+        "projectName": "Career.Data",
+        "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Data/Career.Data.csproj",
+        "packagesPath": "/Users/oguzatli/.nuget/packages/",
+        "outputPath": "/Users/oguzatli/workspace/Career-Case/Career.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/oguzatli/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/oguzatli/workspace/Career-Case/Career.Contract/Career.Contract.csproj": {
+                "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Contract/Career.Contract.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/oguzatli/workspace/Career-Case/Career.ElasticSearch/Career.ElasticSearch.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/oguzatli/workspace/Career-Case/Career.ElasticSearch/Career.ElasticSearch.csproj",
+        "projectName": "Career.ElasticSearch",
+        "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.ElasticSearch/Career.ElasticSearch.csproj",
+        "packagesPath": "/Users/oguzatli/.nuget/packages/",
+        "outputPath": "/Users/oguzatli/workspace/Career-Case/Career.ElasticSearch/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/oguzatli/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/oguzatli/workspace/Career-Case/Career.Common/Career.Common.csproj": {
+                "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Common/Career.Common.csproj"
+              },
+              "/Users/oguzatli/workspace/Career-Case/Career.Contract/Career.Contract.csproj": {
+                "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Contract/Career.Contract.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/oguzatli/workspace/Career-Case/Career.Repository/Career.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/oguzatli/workspace/Career-Case/Career.Repository/Career.Repository.csproj",
+        "projectName": "Career.Repository",
+        "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Repository/Career.Repository.csproj",
+        "packagesPath": "/Users/oguzatli/.nuget/packages/",
+        "outputPath": "/Users/oguzatli/workspace/Career-Case/Career.Repository/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/oguzatli/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/oguzatli/workspace/Career-Case/Career.Common/Career.Common.csproj": {
+                "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Common/Career.Common.csproj"
+              },
+              "/Users/oguzatli/workspace/Career-Case/Career.Contract/Career.Contract.csproj": {
+                "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Contract/Career.Contract.csproj"
+              },
+              "/Users/oguzatli/workspace/Career-Case/Career.Data/Career.Data.csproj": {
+                "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Data/Career.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/oguzatli/workspace/Career-Case/Career.Service/Career.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/oguzatli/workspace/Career-Case/Career.Service/Career.Service.csproj",
+        "projectName": "Career.Service",
+        "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Service/Career.Service.csproj",
+        "packagesPath": "/Users/oguzatli/.nuget/packages/",
+        "outputPath": "/Users/oguzatli/workspace/Career-Case/Career.Service/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/oguzatli/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/oguzatli/workspace/Career-Case/Career.Common/Career.Common.csproj": {
+                "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Common/Career.Common.csproj"
+              },
+              "/Users/oguzatli/workspace/Career-Case/Career.Contract/Career.Contract.csproj": {
+                "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Contract/Career.Contract.csproj"
+              },
+              "/Users/oguzatli/workspace/Career-Case/Career.Data/Career.Data.csproj": {
+                "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Data/Career.Data.csproj"
+              },
+              "/Users/oguzatli/workspace/Career-Case/Career.ElasticSearch/Career.ElasticSearch.csproj": {
+                "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.ElasticSearch/Career.ElasticSearch.csproj"
+              },
+              "/Users/oguzatli/workspace/Career-Case/Career.Repository/Career.Repository.csproj": {
+                "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Repository/Career.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/oguzatli/workspace/Career-Case/Career.Test/Career.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/oguzatli/workspace/Career-Case/Career.Test/Career.Test.csproj",
+        "projectName": "Career.Test",
+        "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Test/Career.Test.csproj",
+        "packagesPath": "/Users/oguzatli/.nuget/packages/",
+        "outputPath": "/Users/oguzatli/workspace/Career-Case/Career.Test/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/oguzatli/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/oguzatli/workspace/Career-Case/Career.Common/Career.Common.csproj": {
+                "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Common/Career.Common.csproj"
+              },
+              "/Users/oguzatli/workspace/Career-Case/Career.Contract/Career.Contract.csproj": {
+                "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Contract/Career.Contract.csproj"
+              },
+              "/Users/oguzatli/workspace/Career-Case/Career.Data/Career.Data.csproj": {
+                "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Data/Career.Data.csproj"
+              },
+              "/Users/oguzatli/workspace/Career-Case/Career.ElasticSearch/Career.ElasticSearch.csproj": {
+                "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.ElasticSearch/Career.ElasticSearch.csproj"
+              },
+              "/Users/oguzatli/workspace/Career-Case/Career.Repository/Career.Repository.csproj": {
+                "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Repository/Career.Repository.csproj"
+              },
+              "/Users/oguzatli/workspace/Career-Case/Career.Service/Career.Service.csproj": {
+                "projectPath": "/Users/oguzatli/workspace/Career-Case/Career.Service/Career.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
             "MSTest.TestAdapter": {
               "target": "Package",
               "version": "[2.2.7, )"
@@ -50,9 +563,17 @@
               "target": "Package",
               "version": "[16.11.0, )"
             },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.17.2, )"
+            },
             "coverlet.collector": {
               "target": "Package",
               "version": "[3.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
             }
           },
           "imports": [

@@ -1,8 +1,8 @@
 using Career.Common.Logging;
-using Career.Data.ElasticSearch;
-using Career.Data.Repositories.BannedWordsRepository;
-using Career.Data.Repositories.CompanyRepository;
-using Career.Data.Repositories.JobRepository;
+using Career.ElasticSearch.ElasticSearch;
+using Career.Repository.Repositories.BannedWordsRepository;
+using Career.Repository.Repositories.CompanyRepository;
+using Career.Repository.Repositories.JobRepository;
 using Career.Service.Services.CompanyService;
 using Career.Service.Services.JobService;
 using MassTransit;

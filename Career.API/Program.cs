@@ -1,11 +1,11 @@
 using Career.API;
+using Career.API.ActionFilter;
 using Career.Common.Configuration;
+using Career.Common.Mapper;
 using Career.Data;
-using Career.Data.Mapper;
 using MassTransit;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using RabbitMQ.Client;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,7 +26,6 @@ QueueConnection(services);
 DependencyInjection(services);
 //AutoMapper
 services.AddAutoMapper(typeof(Mapping));
-
 
 #region Methods
 

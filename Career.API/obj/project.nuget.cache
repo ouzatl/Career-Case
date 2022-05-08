@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8CokRl9X7KVCTyk+BDQ9siOj9L3APMGBvQEY60BPjRQoQPuRV8vLFDlX6HGA00H631vaAFA9CF420s2UKYsAUQ==",
+  "dgSpecHash": "1KWI9SLB0KOIg85Qs5xudEmAlo26RHyGFTeIMdotaWV+Y+UcdLsISiXIiA1dRrg8nwkU2iSCKzEeFQ8E69VRSA==",
   "success": true,
   "projectFilePath": "/Users/oguzatli/workspace/Career-Case/Career.API/Career.API.csproj",
   "expectedPackageFiles": [
@@ -60,6 +60,8 @@
     "/Users/oguzatli/.nuget/packages/npgsql.entityframeworkcore.postgresql/6.0.4/npgsql.entityframeworkcore.postgresql.6.0.4.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/npgsql.entityframeworkcore.postgresql.design/1.1.0/npgsql.entityframeworkcore.postgresql.design.1.1.0.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/pipelines.sockets.unofficial/2.2.0/pipelines.sockets.unofficial.2.2.0.nupkg.sha512",
+    "/Users/oguzatli/.nuget/packages/protobuf-net/3.1.0/protobuf-net.3.1.0.nupkg.sha512",
+    "/Users/oguzatli/.nuget/packages/protobuf-net.core/3.1.0/protobuf-net.core.3.1.0.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/rabbitmq.client/6.2.4/rabbitmq.client.6.2.4.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/Users/oguzatli/.nuget/packages/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
